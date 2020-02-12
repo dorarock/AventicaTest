@@ -12,12 +12,7 @@ class App extends React.Component {
 
     this.state = {
       greenMark: [],
-      newCards: [
-        // {
-        //   'id': 10,
-        //   'name': '',
-        // }
-      ],
+      newCards: [],
 
       addedCard: [
         {
