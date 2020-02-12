@@ -1,38 +1,349 @@
 .App {
+  width: 1200px;
+  padding: 15px 15px;
   text-align: center;
+  margin: 0 auto;
+  background-color: rgb(38, 241, 214);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.react_header {
+  margin: 0 auto;
+  height: 50px;
+  background-color: rgb(156, 109, 243);
+  text-align: center;
+  line-height: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.react_header_txt {
+  color: white;
+  font-size: 25px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.react_header_logo {
+  color: rgb(235, 165, 188);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.purple_wrapper {
+  min-width: 990px;
+  min-height: 400px;
+  margin-left: 10px;
+  background-color: rgb(156, 109, 243);
+}
+
+.main_content_wrapper {
+  width: 100%;
+  min-height: 400px;
+  margin: 0 auto;
+  margin-top: 20px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  /* justify-content: space-between; */
+}
+
+
+.left_col {
+ width: 200px;
+}
+
+.newCard {
+  width: 100%;
+  background-color: rgb(156, 109, 243);
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;;
+  box-sizing: border-box;
+}
+
+.input_txt {
+  display: block;
+  height: 20px;
+  border: 1px solid black;
+  color: #000000;
+  font-family: Verdana;
+  background-color: white;
+}
+
+.btn_newCard_wrapper {
+ margin-top: 10px;
+ padding-bottom: 10px;
+ display: flex;
+ justify-content: space-between;
+}
+
+.newCard_btn {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  border-radius: 2px;
+  cursor: pointer;
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+
+.draft_btn {
+ padding-left: 25px;
+ padding-right: 25px;
+ background-color: grey;
+ border: 1px solid grey;
+ transition: 0.2s
+}
+
+.draft_btn:hover {
+  background-color: rgb(201, 192, 192);
+  transition: 0.2s
+}
+
+
+.save_btn {
+  background-color: rgb(41, 214, 41);
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 1px solid rgb(41, 214, 41);
+  transition: 0.2s
+}
+
+.save_btn:hover {
+  background-color: rgb(191, 226, 35);
+  transition: 0.2s
+}
+
+
+.alarmValue {
+  border: 1px solid red;
+  color: #000000;
+  font-family: Verdana;
+  background-color:rgb(165, 108, 108);
+}
+
+.alarmValue::placeholder{
+  color:black;
+}
+
+.green_mark_count {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: rgb(38, 241, 214);
+  float: right;
+  margin-right: 12px;
+  margin-top: 10px;
+  line-height: 30px;
+  font-weight: 600;
+}
+
+.card_wrapper {
+  margin-left: 10px;
+  padding: 5px 0px;
+  box-sizing: border-box;
+  background-color: rgb(156, 109, 243);
+  display: flex;
+  flex-flow: row wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-content: flex-start;
+}
+
+.card {
+  width: 150px;
+  height: 150px;
+  background-color: bisque;
+  /* display: flex; */
+  /* float: left; */
+  margin: 10px;
+  padding: 5px 5px;
+  box-sizing: border-box;
+  text-align: left;
+  margin: 5px;
+  padding: 5px;
+  flex: 0 1 200px;
+}
+
+.card:hover{
+  box-shadow:2px 1px 25px 1px rgba(0,0,0,0.43);
+  -webkit-box-shadow:2px 1px 25px 1px rgba(0,0,0,0.43);
+  -moz-box-shadow:2px 1px 25px 1px rgba(0,0,0,0.43);
+}
+
+.card_name_wrapper {
+  display: flex;
+
+}
+
+.card_name {
+  display: block;
+}
+
+.mark {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  margin-left: auto;
+  margin-right: 5px;
+  transition: 0.5s;
+}
+
+.mark_green {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: green;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: 5px;
+  transition: 0.5s;
+}
+
+.btn_wrapper {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 80px;
+}
+
+.crt_btn {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: rgb(175, 142, 105);
+  border-radius: 2px;
+  cursor: pointer;
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.card_draft_btn {
+  padding-left: 7px;
+  padding-right: 7px;
+  border: 1px solid rgb(175, 142, 105);
+  transition: 0.2s
+}
+
+.card_draft_btn:hover {
+  background-color: white;
+  color: rgb(175, 142, 105);
+  transition: 0.2s
+}
+
+.card_mark_btn {
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1px solid rgb(175, 142, 105);
+}
+
+.card_mark_btn:hover {
+  background-color: white;
+  color: rgb(175, 142, 105);
+  transition: 0.2s
+}
+
+.draft {
+  width: 100%;
+  /* min-height: 300px;  */
+  margin-top: 10px;
+  padding: 15px 15px;
+  box-sizing: border-box;
+  background-color: rgb(156, 109, 243); 
+}
+
+.draft h2 {
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  text-align: left;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.draft_card {
+  width: 100%;
+  background-color: bisque;
+  margin-top: 30px;
+  border: 2px solid rgb(202, 140, 63);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.draft_card:hover {
+  box-shadow:2px 1px 25px 1px rgba(0,0,0,0.43);
+  -webkit-box-shadow:2px 1px 25px 1px rgba(0,0,0,0.43);
+  -moz-box-shadow:2px 1px 25px 1px rgba(0,0,0,0.43);
+}
+
+.changeTxtInput {
+  display: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 200;
+  line-height: 30px;
+  text-align: left;
+  height: 30px;
+  width: 100%; 
+  border: none;
+  border-bottom: 1px solid rgba(189, 129, 61, 0.836);
+  background-color: rgba(255, 255, 255, 0.836);
+}
+
+.draft_card_txt {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 200;
+  line-height: 30px;
+  text-align: left;
+  display: block;
+  height: 30px;
+  border: 1px solid rgb(202, 140, 63);
+  background-color: rgb(221, 174, 116);
+  cursor: pointer;
+}
+
+.btn_draft_wrapper {
+  margin-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn_remove {
+  background-color: red;
+  padding-left: 5px;
+  padding-right: 5px;
+  border: 1px solid red;
+  transition: 0.2s;
+}
+
+.btn_remove:hover {
+  background-color: white;
+  color: red;
+  transition: 0.2s;
+
+}
+
+.btn_save  {
+  background-color: rgb(41, 214, 41);
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1px solid rgb(41, 214, 41);
+  transition: 0.2s;
+}
+
+.btn_save:hover {
+  background-color: white;
+  color: rgb(35, 211, 35);
+  transition: 0.2s;
+}
+
+
+.noCards {
+  margin-top: 200px;;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  font-size: 30px;
+  opacity: 0.3;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.noCards:hover {
+  opacity: 1;
+  transition: 0.4s;
 }
