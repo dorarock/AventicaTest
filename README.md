@@ -1,6 +1,6 @@
 КАК ЗАПУСКАТЬ ПРОЕКТ?
 
-1. С помощью Docker командой "docker compouse up" (http://localhost:3000);
+1. С помощью Docker командой "docker compose up" (http://localhost:3000);
 
 
 
