@@ -1,6 +1,10 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+КАК ЗАПУСКАТЬ ПРОЕКТ?
 
-## Available Scripts
+1. С помощью Docker командой docker compouse up (http://localhost:3000);
+
+
+
+2. С помощью npm: 
 
 In the project directory, you can run:
 
