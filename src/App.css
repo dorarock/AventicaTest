@@ -138,12 +138,13 @@
 
 .card_wrapper {
   margin-left: 10px;
-  padding: 5px 0px;
+  padding: 20px 0px;
+  padding-left: 50px;
   box-sizing: border-box;
   background-color: rgb(156, 109, 243);
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
+  justify-content: left;
   align-content: flex-start;
 }
 
@@ -335,7 +336,8 @@
 
 
 .noCards {
-  margin-top: 200px;;
+  margin-top: 200px;
+  margin-left: 300px;
   font-family: 'Times New Roman', Times, serif;
   text-align: center;
   font-size: 30px;
