@@ -223,6 +223,7 @@ class App extends React.Component {
       }
 
       document.querySelector('.input_txt').value = '';
+      input.placeholder = 'Enter text'
 
       this.setState((prevState) => ({
         addedCard: [...prevState.addedCard, newCard]
